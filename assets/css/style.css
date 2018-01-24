@@ -17,6 +17,12 @@ body {
 	background-color:aquamarine;
 }
 
+#computernumber {
+	color:#777;
+	font-size:30px;
+	text-align:center;
+}   
+
 #yourscore {background-color: #777;
 	color:white;
 	border-style: dashed;
