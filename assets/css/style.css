@@ -1,0 +1,31 @@
+#Rulebox {background-color: #777;
+	color:white;
+	font-family: Papyrus;
+	border-style: dashed;
+	border-color:white;
+	text-align:center;
+	width:550px;
+	height:650px;
+
+}
+
+h1 {text-align:center;
+	color:#777;
+}
+
+body {
+	background-color:aquamarine;
+}
+
+#yourscore {background-color: #777;
+	color:white;
+	border-style: dashed;
+	border-color:white;
+	text-align:center;
+	float:right;
+	width:250px;
+	height:250px;
+	margin-top:-650px;
+
+}
+
