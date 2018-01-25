@@ -39,32 +39,130 @@
 
 //reset();
 
+// On Page Load:
+        // Create variables (and set them to default values):
+	    	// computerRandomNumber
+			// array of crystals values
+	        // wins = 0
+	        // losses = 0
+	        // userTotalScore
+        // Call reset function
+		// Call update items on the page function
+    // On crystal click:
+        // Figure out what crystal they clicked and store in a variable
+        // Store crystal value in variable (crystalClickedValue)
+        // Add crystalClickedValue to userTotalScore
+        // Call update items on the page function
+        // if they win (userTotalScore === computerRandomNumber)
+            // Add 1 to wins
+            // Call reset function
+			// Call update items on the page function
+        // if they lose (userTotalScore > computerRandomNumber)
+			// Add 1 to losses
+			// Call reset function
+			// Call update items on the page function
+    // Update items on the page (function):
+        // Put wins on page
+        // Put losses on page
+        // Put computerRandomNumber on page
+        // Put userTotalScore on page
+	// Reset (function):
+		// userTotalScore = 0
+        // computerRandomNumber = new random number between 19 and 120
+        // array of crystals values (new random numbers between 1 and 12)
+
 
 $(document).ready(function(){
 
-var counter = 0
-var wins= 0
-var losses= 0
-var Totalwins= 0
+//define variables
+     
+     var wins= 0
+     var losses= 0
+     var score =0
 
 
-var numberGoal = Math.floor(Math.random() * ((120-19)+1) + 19);
-      alert("The value that you want is:   "  +  numberGoal);
+    //generate random number for computer, push to html
+    var numberGoal = Math.floor(Math.random() * ((120-19)+1) + 19);
+    alert("The value that you want is:   "  +  numberGoal);
 
-      $("#computernumber").text(numberGoal);
+    $("#computernumber").text(numberGoal);
+
+   
+
+        var crystalValuea = ["1", "5", "2", "7"];
+
+        for (var i = 0; i<crystalValuea.length; i++) {
+
+
+         $("#crystala").on("click", function(){ 
+         score = score + parseInt(crystalValuea[i]);  
+
+     
+
+         $("#yourscore").text(score);
+
+      });
+
+     }
+
+
+     var crystalValueb = ["9", "5", "2", "7"];
+
+    for (var i = 0; i<crystalValueb.length; i++) {
+
+
+       $("#crystalb").on("click", function(){ 
+        score= score +  parseInt(crystalValueb[i]);  
+
+
+    });
+
+    }   
+
+     var crystalValuec = ["8", "6", "2", "7"];
+
+    for (var i = 0; i<crystalValuec.length; i++) {
+
+       $("#crystalc").on("click", function(){ 
+        score= score + parseInt(crystalValuec[i]);  
+
+    //document.write(crystalvaluec)
+
+    });
+
+}
+     var crystalValued = ["9", "4", "3", "2"];
+
+    for (var i = 0; i<crystalValued.length; i++) {
+
+    }
+
+});
+ //  $("#crystald").on("click", function(){ 
+   // counter + crystalValued[i];  
+//});
+//}
 
  
- });
 
- var crystalValues = [9, 5, 2, 7];
+//This is the counter # section: 
+   
+  
+    //$("#yourscore").text(score);
 
-for (var i = 0; i<crystalValues.length; i++) {
-	
+    //if (score === numberGoal){
+      //alert("You win!");
+    
+ //else if(counter >= numberGoal){
+
+ //}
 
 
 
-$("#crystala").on("click", function() {
-	alert (crystalValues[i]);
-})
+     
 
-};
+    
+
+
+
+

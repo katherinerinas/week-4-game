@@ -9,7 +9,8 @@
 
 }
 
-h1 {text-align:center;
+h1 {font-family:cursive;
+	text-align:center;
 	color:#777;
 }
 
@@ -29,8 +30,8 @@ body {
 	border-color:white;
 	text-align:center;
 	width:150px;
-	height:150px;
-	
+	height:200px;
+	margin-right: 350px;
 	}
 
 #crystala {float:right;
