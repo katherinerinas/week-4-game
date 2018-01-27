@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 
 
-     $("#crystal" + i+ "img").attr("data-crystalvalue",crystalValues[i]);
+     $(".crystal-image" + i+ "img").attr("data-crystalvalue",crystalValues[i]);
 
 //setting values to each crystal
 
@@ -30,8 +30,7 @@ $(document).ready(function(){
        
     };
 
-
-     $(".crystal-image").on("click", function() {
+       $(".crystal-image").on("click", function() {
   
         var crystalValue = ($(this).attr("data-crystalvalue"));
         console.log(crystalValue);
