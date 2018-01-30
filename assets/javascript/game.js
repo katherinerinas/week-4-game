@@ -111,7 +111,7 @@ $(document).ready(function(){
     for (var i = 0; i<crystalValueb.length; i++) {
 
 
-       $("#crystalb").on("click", function(){ 
+       $("#crystalbee").on("click", function(){ 
         score= score +  parseInt(crystalValueb[i]);  
 
 

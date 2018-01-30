@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
 
-    var crystalValues = ["1", "5", "2", "7"];
+    var crystalValues = [4, 5, 8, 7];
 
     for (var i = 0; i<crystalValues.length; i++) {
 
@@ -30,12 +30,16 @@ $(document).ready(function(){
        
     };
 
-       $(".crystal-image").on("click", function() {
+       
   
         var crystalValue = ($(this).attr("data-crystalvalue"));
         console.log(crystalValue);
-        crystalValue = parseInt(crystalValue);
-       
+        crystalValue = parseInt(crystalValues);
+        $(".crystal-image").on("click", function(crystalValue){
+
+        });
+
+        
 
         score += crystalValue;
              console.log(score);
@@ -45,10 +49,14 @@ $(document).ready(function(){
 
         if (score === numberGoal){
             alert("You win!");
-
-        else if (score > numberGoal){
-        	 alert("You Lose!");
-         }
+            wins ++;
+            score ++;
         }
+        else if(score > numberGoal){
+        	 alert("You Lose!");
+             losses ++;
+             score--;
+         }
+        
     });
-});
+
