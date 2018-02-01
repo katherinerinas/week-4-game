@@ -22,7 +22,10 @@ $(document).ready(function(){
 
 
 
-     $(".crystal-image" + i+ "img").attr("data-crystalvalue",crystalValues[i]);
+    $("#crystal0").attr("data-crystalvalue", crystalValues[0]);
+    $("#crystal1").attr("data-crystalvalue", crystalValues[1]);
+    $("#crystal2").attr("data-crystalvalue", crystalValues[2]);
+    $("#crystal3").attr("data-crystalvalue", crystalValues[3]);
 
 //setting values to each crystal
 
@@ -31,8 +34,7 @@ $(document).ready(function(){
     };
 
        
-  
-        var crystalValue = ($(this).attr("data-crystalvalue"));
+        var crystalValue = $(this).attr("data-crystalvalue");
         console.log(crystalValue);
         crystalValue = parseInt(crystalValues);
         $(".crystal-image").on("click", function(crystalValue){
@@ -41,7 +43,7 @@ $(document).ready(function(){
 
         
 
-        score += crystalValue;
+        score = score + crystalValue;
              console.log(score);
         //This is the counter # section: 
 
