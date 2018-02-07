@@ -55,10 +55,14 @@ $(document).ready(function(){
             score ++;
         }
         else if(score > numberGoal){
-        	 alert("You Lose!");
+             alert("You Lose!");
              losses ++;
              score--;
          }
         
     });
+
+        
+        
+
 
