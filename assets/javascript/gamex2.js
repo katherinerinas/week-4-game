@@ -36,10 +36,18 @@ $(document).ready(function(){
         var crystalValue = $(this).attr("data-crystalvalue");
         console.log(crystalValue);
         crystalValue = parseInt(crystalValues);
-        $(".crystal-image").on("click", function(crystalValue){
+        $("#crystala").on("click", function(crystalValue){
 
         });
+        // $("#crystalbee").on("click", function(crystalValue){
 
+        // });
+        // $("#crystalc").on("click", function(crystalValue){
+
+        // });
+        // $("#crystald").on("click", function(crystalValue){
+
+        // });
         
 
         score = score + crystalValue;
