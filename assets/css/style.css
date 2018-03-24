@@ -2,8 +2,8 @@
 	background-color:black;
 	color:aquamarine;
 	font-family: Papyrus;
-	border-style: dashed;
-	border-color:aquamarine;
+	
+	border-color:grey;
 	text-align:center;
 	width:550px;
 	height:250px;
@@ -39,8 +39,6 @@ body {
 	background-color:black;
 	color:aquamarine;
 	font-family: Papyrus;
-	border-style: dashed;
-	border-color:aquamarine;
 	text-align:center;
 	width:450px;
 	height:250px;
@@ -55,7 +53,7 @@ body {
   background-color:black;
   color:aquamarine;
   margin-top:-200px;
-  margin-left:575px;
+  margin-left:550px;
   text-align:center;
   font-size:50px;
   height:150px;
