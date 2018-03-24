@@ -1,60 +1,65 @@
-#Rulebox {background-color:#777;
-	color:white;
+#Rulebox {
+	background-color:#777;
+	color:aquamarine;
 	font-family: Papyrus;
 	border-style: dashed;
-	border-color:white;
+	border-color:aquamarine;
 	text-align:center;
 	width:550px;
-	height:650px;
+	height:250px;
+	margin-top:-50px;
 
 }
 
-h1 {font-family:cursive;
+h1 {
+	font-family:cursive;
 	text-align:center;
-	color:#777;
+	color:aquamarine;
 }
 
 body {
-	background-color:aquamarine;
+	background-color:black;
 }
 
-#computernumber {
+.crystals-button {
+	display:inline;
+	padding:2px;
+	margin-left:50px;
+}
+
+
+#computerNumber {
 	color:#777;
 	font-size:30px;
 	text-align:center;
 }   
 
-#yourscore {background-color: #777;
-	color:white;
+#winKeeper{
+	float:right;
+	background-color:#777;
+	color:aquamarine;
+	font-family: Papyrus;
 	border-style: dashed;
-	border-color:white;
+	border-color:aquamarine;
 	text-align:center;
-	width:150px;
-	height:200px;
-	margin-right: 350px;
-	}
-
-#crystala {float:right;
-	margin-top:-550px;
-	margin-right:50px;
-
-	
-}
-
-
-#crystalbee {float:right;
-	margin-top:-800px;
-	margin-right:50px;
+	width:450px;
+	height:250px;
+	margin-top:-250px;
+	margin-right:100px;
+	font-size:30px;
 
 }
 
-#crystalc {float:right;
-	margin-top:-800px;
-	margin-right:300px;
 
+#score-number {
+  background-color:black;
+  color:aquamarine;
+  margin-top:-200px;
+  margin-left:575px;
+  text-align:center;
+  font-size:50px;
+  height:150px;
+  width:150px;
 }
 
-#crystald {float:right;
-	margin-top:-550px;
-    margin-right:300px;
-}
+
