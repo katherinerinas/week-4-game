@@ -13,11 +13,11 @@ $(document).ready(function() {
     return {
       crystala: {
         points: Math.floor(Math.random() * 12) + 1,
-        imageUrl: "assets/images/crystala.jpg"
+        imageUrl: "assets/images/crystalc.jpg"
       },
       crystalbee: {
         points: Math.floor(Math.random() * 12) + 1,
-        imageUrl: "assets/images/crystalbee.jpg"
+        imageUrl: "assets/images/crystald.jpg"
       },
       crystalc: {
         points: Math.floor(Math.random() * 12) + 1,
