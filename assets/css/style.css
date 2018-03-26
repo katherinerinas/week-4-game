@@ -2,7 +2,6 @@
 	background-color:black;
 	color:aquamarine;
 	font-family: Papyrus;
-	
 	border-color:grey;
 	text-align:center;
 	width:550px;
@@ -15,6 +14,7 @@ h1 {
 	font-family:cursive;
 	text-align:center;
 	color:aquamarine;
+	text-shadow:3px 3px #777;
 }
 
 body {
