@@ -30,6 +30,7 @@ body {
 
 #computerNumber {
 	color:#777;
+	text-shadow:1px 1px aquamarine;
 	font-size:30px;
 	text-align:center;
 }   
