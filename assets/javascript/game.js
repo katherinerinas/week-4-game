@@ -43,6 +43,7 @@ $(document).ready(function() {
     randomNum = randomNumGen();
     $("#computerNumber").text(randomNum);
     $("#winKeeper").empty();
+ 
   }
   
   function updateDom(didUserWin) {
@@ -79,9 +80,11 @@ $(document).ready(function() {
       $("#crystals-here").append(crystalDiv);
     }
   }
+  
   function updateMatchingNumber(crystal) {
     
     yourNumber += crystals[crystal.attr("data-name")].points;
+
   }
   
   function renderMatchingNumber() {
@@ -108,12 +111,12 @@ $(document).ready(function() {
     }
     
     else if (yourNumber > randomNum) {
-      
-      losses++;
-      setGame();
-      updateDom(false);
-    }
-  });
+
+         losses++;
+         setGame();
+         updateDom(false);
+      }
+   });
 });
      
 
