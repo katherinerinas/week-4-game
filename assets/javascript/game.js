@@ -93,21 +93,19 @@ $(document).ready(function() {
     $("#yourScore").html(scoreNumDiv);
   }
  
-  setGame();
-  updateDom();
-  renderCrystals();
-  renderMatchingNumber();
+   setGame();
+   updateDom();
+   renderCrystals();
+   renderMatchingNumber();
   
   $(".crystals-button").on("click", function(event) {
-    
-    updateMatchingNumber($(this));
-    renderMatchingNumber();
+      updateMatchingNumber($(this));
+      renderMatchingNumber();
    
     if (yourNumber === randomNum) {
-     
-      wins++;
-      setGame();
-      updateDom(true);
+       wins++;
+       setGame();
+       updateDom(true);
     }
     
     else if (yourNumber > randomNum) {
